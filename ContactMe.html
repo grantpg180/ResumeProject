@@ -4,6 +4,8 @@
 	<title>Contact Pernell Here</title>
 
 	<link rel="stylesheet" type="text/css" href="ResumeCSS.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<header>
@@ -21,18 +23,15 @@
 			<option>Questions</option>
 		</select>-->
 		<br>
-		<h1>Contact Me</h1>
-		<label for="HireMe">How did you hear about me?</label>
+		<h1 class="scale-in-center">Contact Me</h1>
+		<!--<label for="HireMe">How did you hear about me?</label>
 		<br>
 			<input class="radio" type="radio" name="HireMe">Magazine/Newspaper Ad
 			<input class="radio" type="radio" name="HireMe">Internet Ad
 			<input class="radio" type="radio" name="HireMe">Friend/Family Member
 			<input class="radio" type="radio" name="HireMe">Other (please specify below)
-		</label>
-			<br>
-		<label for="other"></label>
-		<input type="text" name="other">
-			<br>
+		</label>-->
+	<!--		<br>
 			<br>
 		<label for="whatJob">Select Tech Job(s) needed:</label>
 			<br>
@@ -49,8 +48,8 @@
 		<input class="checkbox" type="checkbox" name="whatJob">Aquarium Re-homing
 		<input class="checkbox" type="checkbox" name="whatJob">Aquarium Surrendering
 			<br>
-			<br>
-		<label for="fname">First Name:</label>
+			<br> -->
+	<!--	<label for="fname">First Name:</label>
 		<input type="text" name="fname">
 			<br>
 		<label for="lname">Last Name:</label>
@@ -60,19 +59,101 @@
 		<input type="text" name="phone">
 			<br>
 		<label for="email">Email:</label>
-		<input type="text" name="email">
+		<input type="text" name="email">-->
+		<table class="FirstName">
+  <tr>
+    <th>First Name:</th>
+  </tr>
+  <tr>
+      <td><input type="text" name="fname"><label for="fname"></label></td>
+  </tr>
+</table>
+<table class="LastName">
+  <tr>
+    <th>Last Name:</th>
+  </tr>
+    <tr>
+      <td>
+        <input type="text" name="lname">
+          
+      </td>
+    </tr>
+</table>
+<br>
+<table class="PhoneNum">
+  <tr>
+    <th>Phone Number:</th>
+  </tr>
+  <tr>
+    <td><input type="text" name="phone">
+      
+    </td>
+  </tr>
+</table>
+<table class="Email">
+  <tr>
+    <th>Email:</th>
+  </tr>
+  <tr>
+    <td><input type="text" name="email">
+      
+    </td>
+  </tr>
+</table>
 		<br>
-		<label for="contact?">Preferred Method of Contact (please choose below):</label>
-		<input type="radio" name="contact?">Phone
-		<input type="radio" name="contact?">Email
+		<label for="contact?">Preferred Method of Contact:</label>
+		<input type="checkbox" name="contact?"><strong>Phone</strong>
+		<input type="checkbox" name="contact?"><strong>Email</strong>
 		<br>
 		<br>
-		<label for="comments">Questions, Comments or Concerns:</label>
+		<label for="comments"><strong>Questions, Comments or Concerns:</strong></label>
 		<br>
 		<textarea id="comments" rows="4" cols="50">
 		</textarea>
 		<br>
-		<button>Submit</button>
+		
+		<br>
+
+		<table class="table1">
+			<tr>
+    			<th for="whichjob"></th>
+    		</tr>
+    		<tr><th><input type="radio" name="whichjob">Tech Jobs</th>
+  			</tr>
+      <tr><td><input type="checkbox" name="techjob">Web Design</td></tr>
+      <tr></tr><td><input type="checkbox" name="techjob">Front-End Programming</td></tr>
+      <tr></tr><td><input type="checkbox" name="techjob">Back-End Programming</td></tr>
+      <tr></tr><td><input type="checkbox" name="techjob">File Recovery</td></tr>
+      <tr></tr><td><input type="checkbox" name="techjob">Home-Office Setup</td></tr>
+     </table>
+     
+ <table class="table2">
+      <tr>
+        <th><input type="radio" name="whichjob">Aquarium Jobs</th>
+      </tr>
+      <tr><td><input type="checkbox" name="fishjob">Aquarium Care/Vacation Assitance</td></tr>
+      <tr><td><input type="checkbox" name="fishjob">Aquarium Maintenance</td></tr>
+      <tr><td><input type="checkbox" name="fishjob">Aquarium Build</td></tr>
+      <tr><td><input type="checkbox" name="fishjob">Aquarium Re-Homing</td></tr>
+      <tr><td><input type="checkbox" name="fishjob">Aquarium Surrendering</td></tr>
+
+
+ 
+</table>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<th><label for="HireMe">How did you hear about me?</label></th>
+			</tr>
+				<tr><td><input class="radio" type="radio" name="HireMe">Magazine/Newspaper Ad</td></tr>
+				<tr><td><input class="radio" type="radio" name="HireMe">Internet Ad</td></tr>
+				<tr><td><input class="radio" type="radio" name="HireMe">Friend/Family Member</td></tr>
+				<tr><td><input class="radio" type="radio" name="HireMe">Other--please specify:<span><label for="other"></label>
+							<input type="text" name="other"></span></td></tr>
+			</tr>
+		</table>
+		<button><a href="#">Submit</button>
 
 
 	</form>
